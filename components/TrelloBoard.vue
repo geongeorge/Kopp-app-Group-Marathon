@@ -1,13 +1,37 @@
 <template>
-  <div>
-      <div class='embed-container'>
-            <iframe src="https://trello.com/b/vtuWFs7X.html" height="400" id="iHateRegex" frameborder="0"></iframe>
+  <div class="mt-3">
+    <!-- <div class="embed-container">
+      <iframe :src="'https://trello.com/b/'+bData.player.id+'.html'"  id="iHateRegex" frameborder="0"></iframe>
+    </div> -->
+    <h2 class="text-gray-600">{{bData.player.name}}</h2>
+    <div class="bg-gray-300 rounded mt-1 shadow-inner flex mx-auto w-auto overflow-x-scroll">
+        <div class="flex-none w-64 m-2" v-for="(tlist, key) in bData.lists" :key="key">
+         <TrelloList :tlist="tlist"></TrelloList>
         </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import TrelloList from './TrelloList'
+export default {
+components:{
+    TrelloList
+},
+  props: {
+    bData :{default: {}}
+    // bData.player -> name,id
+    // bData.lists -> [ { id, name}, ... ]
+  },
+  data() {
+    return {
+      
+    };
+  },
+  mounted() {
+      console.log(this.bData)
+  }
+};
 </script>
 
 <style>

@@ -25,4 +25,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 https://api.trello.com/1/boards/DjhewvdE/lists
 
+
+we use this:
+https://api.trello.com/1/lists/5d51479f718d417b8df26c72/cards
+
+alt:
 https://api.trello.com/1/boards/DjhewvdE/cards
+
+# Add players
+
+static/players.json
