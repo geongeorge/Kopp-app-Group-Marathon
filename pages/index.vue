@@ -1,6 +1,6 @@
 <template>
   <div class="container mycontainer mx-auto p-4">
-    <h1 class="text-center text-6xl font-light text-gray-800">
+    <h1 class="text-center text-5xl font-light text-gray-800">
       <span class="text-red-600 font-bold">Kopp</span>.app
     </h1>
   <div class="border-gray-300 border p-3 rounded">
