@@ -6,7 +6,7 @@
   <div class="h-48 rounded shadow-inner p-1 overflow-y-scroll bg-gray-400">
       <TrelloCard v-for="(card,key) in cards" :key="key" :url="card.shortUrl">{{card.name}}</TrelloCard>
       <div v-if="cards.length<=0 && loaded" class="text-center">
-          <span class="text-gray-200">Yes, I'am lazy</span>
+          <span class="text-gray-600">yes, im lazy</span>
       </div>
   </div>
   </div>
