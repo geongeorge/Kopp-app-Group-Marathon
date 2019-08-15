@@ -5,7 +5,7 @@
     </h1>
   <div class="border-gray-300 border p-3 rounded">
     <h2 class="text-gray-800 text-3xl">Players</h2>
-    <div class="flex justify-start">
+    <div class="flex flex-wrap justify-start">
       <div class="mx-3 px-2 text-white bg-purple-500 border-purple-600 border rounded hover:underline" v-for="(pl,key) in users" :key="key"><h2><a :href="'https://trello.com/b/'+pl.id" target="_blank">{{pl.name}}</a></h2>
       </div>
     </div>
