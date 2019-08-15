@@ -50,6 +50,16 @@ export default {
     return {
       boardData: boardData
     };
+  },
+  head () {
+    return {
+      title: "The Kopp App",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', 
+        content: 'Progress togather...' }
+      ]
+    }
   }
 };
 </script>
